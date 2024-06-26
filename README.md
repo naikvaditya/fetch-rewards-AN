@@ -1,6 +1,6 @@
 # fetch-rewards-AN
 
-#### Note: A simplified version of the code is available in app.py however, I recommend using main.py as it takes care of all exceptions and is more structured.
+#### Note: A simplified but crude version of the code is available in app-simple.py however, I recommend using main.py as it takes care of all exceptions and is more structured.
 
 ## Overview
 **This file has 3 sections:**
