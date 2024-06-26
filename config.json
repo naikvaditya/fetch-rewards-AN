@@ -1,0 +1,17 @@
+{
+  "database": {
+    "dbname": "postgres",
+    "user": "postgres",
+    "password": "postgres",
+    "host": "localhost",
+    "port": 5432
+  },
+  "sqs": {
+    "queue_url": "http://localhost:4566/000000000000/login-queue",
+    "receive_command": "awslocal sqs receive-message --queue-url http://localhost:4566/000000000000/login-queue"
+  },
+  "queries": {
+    "select_all_user_logins": "SELECT * FROM user_logins;",
+    "insert_user_login": "INSERT INTO user_logins (user_id, device_type, masked_ip, masked_device_id, locale, app_version, create_date) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+  }
+}
